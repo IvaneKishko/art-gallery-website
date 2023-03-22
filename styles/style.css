@@ -1,3 +1,7 @@
+.tablet-content{
+    display: none;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -122,7 +126,121 @@ footer p{
     margin: 3.8rem 0;
 }
 
-footer img{
-    margin-right: 2rem;
-    width: 2rem;
+.icons{
+    display: flex;
+    gap: 20px;
 }
+
+.icons img{
+    width: 20px;
+    height: 20px;
+}
+
+/* TABLET VERSION */
+
+@media only screen and (min-width: 768px) {
+    .mobile-content{
+        display: none;
+    }
+
+    .tablet-content{
+        display: initial;
+    }
+
+    #tablet-p{
+        display: block;
+    }
+
+    main{
+        position: relative;
+        margin-bottom: 12rem;
+    }
+
+    main img{
+        width: 56.901041666%;
+    }
+
+    .main-container{
+        position: absolute;
+        top: 18.880208333%;
+        left: 50.6510416667%;
+        right: 5.20833333333%;
+    }
+
+    /* styling section */
+
+    .intro-container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .intro-container .intro-img{
+        min-width: 54.0760869565%;
+        margin-bottom: 1.1rem;
+    }
+
+    .intro-txt{
+        padding: 0 6.8rem 0 3.9rem;
+    }
+
+    /* Styling Grid - invitation container */
+
+    .invitation-container {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 5fr;
+        grid-template-areas: 
+        "tall short short short short"
+        "tall short short short short"
+        "tall short short short short"
+        "tall content content content content"
+        "tall content content content content"
+        "tall content content content content";
+        grid-gap: 1.1rem;
+    }
+
+    #tall-img-tablet{
+        grid-area: tall;
+        max-height: 720px;
+    }
+
+    #short-img-tablet{
+        grid-area: short;
+        max-height: 313px;
+    }
+
+    .get-inspired{
+        height: 396px;
+        grid-area: content;
+        padding: 8.5rem 2.9rem;
+    }
+
+    /* styling footer */
+
+    footer{
+        padding: 5.6rem 4rem;
+        height: auto;
+        display: flex;
+        align-items: top;
+        justify-content: space-between;
+    }
+
+    footer h5{
+        font-size: 2rem;
+        width: 110.05px;
+    }
+
+    .icons{
+
+    }
+
+    #tablet-p{
+        font-family: Outfit;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: left;
+        width: 36.5885416667%;
+        margin: 0;
+    }
+}  

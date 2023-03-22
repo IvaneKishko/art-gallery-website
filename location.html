@@ -9,17 +9,69 @@
   <title>Frontend Mentor | Art gallery website</title>
 
   <style>
-    div{
-      display: flex;
-      flex-direction: row-reverse;
-    }
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.invitation-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "tall short";
+  grid-gap: 11px;
+}
+
+#tall-img {
+  grid-area: tall;
+  object-fit: cover;
+  height: calc(100% / 1.26517571885);
+  width: 100%;
+}
+
+#short-img {
+  grid-area: short;
+  object-fit: cover;
+  height: calc(50% / 1.26517571885);
+  width: 100%;
+}
+
+.get-inspired {
+  grid-row: 1;
+  grid-column: 2;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(50% / 1.26517571885);
+  width: 100%;
+}
+
+.get-inspired h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.get-inspired p {
+  text-align: center;
+  font-size: 1em;
+}
   </style>
 </head>
 <body>
-  <div>
-    <h1>sds</h1>
-    <p>sadasdasds</p>
-    <img src="./assets/mobile/image-grid-2.jpg" alt="">
+  <div class="invitation-container">
+    <img src="./assets/mobile/image-grid-2@2x.jpg" alt="" id="tall-img">
+    <img src="./assets/mobile/image-grid-3@2x.jpg" alt="" id="short-img">
+    <div class="get-inspired">
+        <h2>COME & BE INSPIRED</h2>
+        <p>We’re excited to welcome you to our gallery and see how our collections influence you.</p>
+    </div>
   </div>
 </body>
 </html>
