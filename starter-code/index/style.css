@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Big Shoulders Display';
+}
+
+/* Styling main */
+
+img{
+    width: 100%;
+}
+
+h1{
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 5.5rem;
+}
+
+.main-container{
+    padding: 3.2rem 1.6rem 0 1.6rem;
+}
+
+p{
+    font-family: 'Outfit';
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #444444;
+}
+
+.main-container p{
+    margin: 3.2rem 0 3.2rem 0;
+}
+
+.location-container{
+    display: flex;
+    padding-bottom: 12rem;
+}
+
+a{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+
+    font-family: 'Big Shoulders Display';
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 3.6363637447357178px;
+}
+
+.our-location, .arrow{
+    display: inline-block;
+    padding: 2.4rem 3.3rem;
+    background: #151515;
+}
+
+.arrow{
+    background: #D5966C;
+    padding: 2.4rem 3.3rem;
+}
+
+/* Styling SECTION */
+
+section{
+    padding: 0 1.6rem;
+    margin-bottom: 12rem;
+}
+
+section h1{
+    padding: 2.3rem 0;
+}
+
+section p{
+    margin-bottom: 3.2rem;
+}
+
+/* Styling invitation container */
+
+.invitation-container{
+    display: grid;
+    gap: 1.6rem;
+}
+
+.get-inspired{
+    height: 29.3rem;
+    background-color: #151515;
+    padding: 4.8rem 2.4rem;
+}
+
+h2{
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 5.5rem;
+    color: white;
+}
+
+.get-inspired p{
+    color: white;
+    margin-top: 2.4rem;
+}
+
+/* styling footer */
+
+footer{
+    background-color: #151515;
+    height: 33.6rem;
+    padding: 4.8rem 3.2rem;
+}
+
+footer h5{
+    font-size: 4rem;
+    color: white;
+    font-weight: 800;
+}
+
+footer p{
+    color: white;
+    margin: 3.8rem 0;
+}
+
+footer img{
+    margin-right: 2rem;
+}
