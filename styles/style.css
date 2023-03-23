@@ -1,4 +1,4 @@
-.tablet-content{
+.tablet-content, .desktop-content{
     display: none;
 }
 
@@ -244,3 +244,78 @@ footer p{
         margin: 0;
     }
 }  
+
+@media only screen and (min-width: 1200px) {
+    main{
+        font-size: 0;
+    }
+    .tablet-content{
+        display: none;
+    }
+    .desktop-content{
+        display: initial;
+    }
+
+    #desktop-background{
+        display: inline-block;
+        width: 450px;
+        height: 800px;
+        background-color: black;
+    }
+
+    #desktop-hero-img{
+        max-width: 540px;
+    }
+
+    .main-container{
+        top: 23.625%;
+        left: 64.5048814505%;
+        right: 11.4365411437%;
+    }
+    
+    .main-container h1{
+        position: absolute;
+        left: -212.5%;
+        top: 13%;
+        color: white;
+        mix-blend-mode: difference; /* make the text color opposite of the image color */
+        opacity: 0.9;
+        font-size: 9.6rem;
+        padding: 0;
+        width: 51.4rem;
+        height: 17.6rem;
+        line-height: 10rem;
+    }
+
+    section{
+        padding-left: 16.5rem;
+        padding-right: 16.5rem;
+    }
+
+    /* styling section */
+
+    /* .invitation-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+        grid-template-areas: 
+        "tall short"
+        "tall content";
+        grid-gap: 1.1rem;
+    } */
+
+    #tall-img-desktop{
+        grid-area: tall;
+        height: 720px;
+    }
+
+    #short-img-desktop{
+        grid-area: short;
+        max-height: 313px;
+    }
+
+    footer{
+        padding: 8rem 16.5rem;
+    }
+
+}
